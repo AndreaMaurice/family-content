@@ -4,27 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrea De Guzman</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+  <!-- CSS -->
+    <link rel="stylesheet" href="/style.css">
+  <!-- Javascript -->
+  <script src="/index.js"></script>
 </head>
-<body>
-  <!-- NAVIGATION -->
-    <nav class="navbar navbar-expand bg-dark pt-4">
-        <a href="#" class="navbar-brand text-white ml-6">ANDREA DE GUZMAN</a>
-        <ul class="navbar-nav navbar-end col-6">
-            <li class="nav-item col-3">
-              <a class="nav-link active text-white" href="#">MY FAMILY</a>
-            </li>
-            <li class="nav-item col-3">
-              <a class="nav-link text-white" href="#">ABOUT ME</a>
-            </li>
-        </ul>
-    </nav>
-    
+<body> 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <!-- Navigation -->
+  <ul>
+    <li><a href="#">Andrea De Guzman</a></li>
+    <li class="menu"><a href="#">My Family</a></li>
+    <li class="menu"><a href="/about-me.html">About Me</a></li>
+  </ul>
+
+  <!-- Image & Description -->
+  <div>
+    <div><img src="/assets/DSC_0030.JPG" alt="My Family Picture"></div>
+    <div class="desc">
+      <h1>Meet my family!</h1>
+      <p>This is my Mejala Family. They are one of the reasons why I'm still here. 
+        They are the ones who I grew up with. I love these people and I know they 
+        love me as well, and I thank God for giving me this family. <br><br> From 
+        left to right, My uncle Marlon, My grandfather Numeriano, My sibling Samantha,
+         My cousin Hyacinth, My grandmother Sittirabia, and My mother, Matrimar.</p>
+    </div>
+  </div>
+
+  <!-- History -->
+  <div class="hist-form">
+    <div class="fam-hist">
+      <h2>My Family History</h2>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;In our family, we have a total of 9 members. My grandfather's name is Numeriano
+         Mejala, and his wife, Sittirabia Lahuran Mejala, are my mother's parents. As you
+          can see, my grandmothers name is a bit different, its because she's a native
+           from Mindanao. They have 3 children named, Marlon, Matrimar, and Mark. My uncle 
+           Marlon doesn't have a family of his own and he's currently at Metro Manila. My 
+          mom, Matrimar aka Mhatty, is at Tarlac with her husband, Ace, and my sister Samantha.
+          While they stay at Tarlac City, I and Kiana currently stays with our grandparents. My
+           other uncle, Mark, have a daughter named Hyacinth, which is also here with us.
+        </p>
+    </div>
+
+    <!-- Form -->
+    <form>
+      <h2>Please fill out the form</h2>
+      <label for="">Complete Name:</label><br>
+      <input type="text" id="guest-name"><br><br>
+      <label for="">Email</label><br>
+      <input type="email" id="guest-email"><br><br>
+      <label for="">Message</label><br>
+      <textarea id="guest-mes" rows="10" cols="30"></textarea><br>
+      <button type="submit" onclick="validateForm()">Submit</button>
+    </form>
+  </div>
+  
+
+    
 </body>
 </html>
