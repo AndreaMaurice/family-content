@@ -1,7 +1,7 @@
 function validateForm() {
-  var name = document.getElementById('guest-name').value 
-  var email = document.getElementById('guest-email').value
-  var mes = document.getElementById('guest-mes')
+  var name = document.getElementById('guest-name').value; 
+  var email = document.getElementById('guest-email').value;
+  var mes = document.getElementById('guest-mes').value;
  var text;
  // validate if empty or not
   if (name == "" || email == "" || mes == "") {
